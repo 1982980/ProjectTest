@@ -1,0 +1,61 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/SLIDER/Photo/photo@1X.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    height: 64px;
+    max-width: 1082px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    padding-left: 375px;
+    padding-right: 375px;
+}
+.header__logo_block{
+    display: flex;
+    align-items: center;
+    padding-right: 219px;
+}
+.header__logo-block-name{
+    font-family: ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 34pt;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+.header__logo-block-name:hover{
+    color: black;
+}
+.header__logo-block-logo{
+    background-image: url("../img/HEADER/Logo/logos@1X.png");
+    height: 56px;
+    width: 64px;
+}
+.header__logo-block-logo:hover{
+    background-image: url("../img/HEADER/Logo/logos.svg");
+}
+/*Нужно сделать чтобы при ховере менялся одновременно цвет текста и картинке */
+.header__menu-block{
+    font-family: ﻿Raleway-Medium, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+.header__menu-block_main-menu_menu{
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+}
+
