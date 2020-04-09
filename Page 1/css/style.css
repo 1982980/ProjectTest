@@ -11,21 +11,25 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 .header{
     height: 64px;
-    max-width: 1082px;
+    /*max-width: 1082px;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 42px;
-    padding-left: 375px;
-    padding-right: 375px;
+    /*padding-left: 375px;*/
+    /*padding-right: 375px;*/
 }
 .header__logo_block{
     display: flex;
     align-items: center;
     padding-right: 219px;
+}
+.header__logo_block:hover .header__logo-block-logo{
+    background-image: url("../img/HEADER/Logo/logos.svg");
 }
 .header__logo-block-name{
     font-family: ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
@@ -38,7 +42,7 @@ html, body {
     color: black;
 }
 .header__logo-block-logo{
-    background-image: url("../img/HEADER/Logo/logos@1X.png");
+    /*background-image: url("../img/HEADER/Logo/logos@1X.png");*/
     height: 56px;
     width: 64px;
 }
