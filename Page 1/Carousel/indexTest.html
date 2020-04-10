@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{margin:0 auto;text-align:center}
+        .select-background{background-color:#fff;border:1px solid #000;display:inline-block;padding:4px 4px 0}
+        .select-background > div{border:inherit;width:100px;height:100px;display:inherit;cursor:pointer}
+        .red{background-image: url("./Slides/01@1X.png")}
+        .green{background-image: url("./Slides/02@1X.png")}
+        .blue{background-image: url("./Slides/03@1X.png")}
+        .yellow{background-image: url("./Slides/04@1X.png")}
+        .orange{background-image: url("./Slides/05@1X.png")}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>Фон</h3>
+    <div class="select-background">
+        <div data-c="red" class="red"></div>
+        <div data-c="green" class="green"></div>
+        <div data-c="blue" class="blue"></div>
+        <div data-c="yellow" class="yellow"></div>
+        <div data-c="orange" class="orange"></div>
+    </div>
+</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<script type="text/javascript">
+    [].forEach.call(document.querySelectorAll('.select-background > div'), function(a){
+        a.onclick=function(){
+            document.body.style.backgroundColor=this.dataset.c;
+        }
+    })
+</script>
+</body>
+</html>

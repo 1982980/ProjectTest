@@ -1,0 +1,26 @@
+html, body{
+    margin: 0 auto;
+    padding:0;
+}
+.container{
+    width: 1920px;
+    height: 700px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text__h2{
+    font-family: ﻿Raleway-SemiBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30pt;
+    color: rgba(85, 85, 85, 255);
+    text-align: center;
+}
+.text__p{
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    color: rgba(140, 140, 140, 255);
+    text-align: center;
+    width: 757px;
+}
