@@ -1,34 +1,38 @@
+/*убрал маржины и паддинги для всей страницы*/
 html, body {
     margin: 0 auto;
     padding: 0;
 }
-
+/*для основного блока задал относительные размеры, добавил фон, задал свойство Флекс и расположил в колонку и по центу*/
 .container {
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background-image: url("../img/SLIDER/Photo/photo@1X.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
 }
 .header{
     height: 64px;
-    max-width: 1082px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-top: 42px;
-    padding-left: 375px;
-    padding-right: 375px;
+    padding-top: 4vh;
+    padding-bottom: 27vh;
 }
 .header__logo_block{
     display: flex;
     align-items: center;
-    padding-right: 219px;
+    margin-right: 219px;
 }
 .header__logo-block-name{
-    font-family: ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: Raleway, sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 34pt;
     color: white;
     text-align: right;
@@ -47,15 +51,88 @@ html, body {
 }
 /*Нужно сделать чтобы при ховере менялся одновременно цвет текста и картинке */
 .header__menu-block{
-    font-family: ﻿Raleway-Medium, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: Raleway, sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 14pt;
     color: white;
     text-align: left;
     text-decoration: none;
 }
-.header__menu-block_main-menu_menu{
-    display: flex;
-    align-items: center;
-    /*justify-content: space-around;*/
+.header__menu-block-nav a{
+    font-family: Raleway, sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    color: white;
+    float: left;
+    /*text-align: left;*/
+    text-decoration: none;
+    margin-right: 30px;
 }
+.header__menu-block-nav a:hover{
+    color:rgba(199, 178, 153, 255);
+}
+.header__cart-block_cart {
+    height: 24px;
+    width: 18px;
+    margin-left: 30px;
+    background-image: url("../img/HEADER/Cart/icon-cart@1X.png");
+}
+.header__cart-block_cart:hover{
+    /*изменил размер рисунка, неправильно отображался при наведении*/
+    height: 27px;
+    width: 19px;
+    background-image: url("../img/HEADER/Cart/icon-cart.svg");
+}
+.header__search-block_search{
+    height: 24px;
+    width: 24px;
+    margin-left: 30px;
+    background-image:url("../img/HEADER/Search/icon-search@1X.png");
+}
+.header__search-block_search:hover{
+    /*изменил размер рисунка, неправильно отображался при наведении*/
+    height: 27px;
+    background-image:url("../img/HEADER/Search/icon-search.svg");
+}
+/*блок сделал флексом и задал 100% экрана, который остался от Хедера*/
+.main {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main__content_second-header{
+    font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 36pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+}
+.main__content{
+    width: 800px;/*45vw*/
+}
+.main__content_first-header{
+    font-family: Raleway, sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 52pt;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
 
+}
+.main__content_text{
+    font-family: ﻿Raleway, sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    padding-bottom: 52px;
+}
+.main__button_get-started{
+    height: 53px;
+    width: 170px;
+    border: none;
+    background-color: rgba(153,134,117,1);
+    font-family: ﻿Raleway, sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-weight: 800;
+    font-size: 14pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+}

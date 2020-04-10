@@ -5,10 +5,14 @@
     <title>Page1</title>
     <link rel="stylesheet" href="css/Reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap');
+    </style>
 </head>
 <body>
+<!--сделал основной блок контейнер, чтобы можно было объеденить с другими страницами-->
 <div class="container">
-    <div class="page1">
+<!--        блок header, котором верняя часть страницы. -->
         <div class="header">
             <div class="header__logo_block">
                 <div class="header__logo-block-logo">
@@ -19,76 +23,39 @@
                 </div>
             </div>
             <div class="header__menu-block">
-                <nav class="header__menu-block_menu">
-                    <ul class="header__menu-block_main-menu_menu">
-                        <li><a href="#" class="header__menu-block_main-menu_menu_current">Home</a></li>
-                        <li>
-                            <a href="#">
-                                About Us
-                            </a>
-                        </li>//<!fdzgzfrg-->
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Features
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Pricing
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Shortcodes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
+                <nav class="header__menu-block-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Features</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Shortcodes</a>
+                    <a href="#">Contacts</a>
                 </nav>
             </div>
             <div class="header__cart-block">
                 <div class="header__cart-block_cart">
-                    <a href="#">
-                        <img src="img/HEADER/Cart/icon-cart.svg"/>
-                    </a>
+                    <a href="#"><!--<img src="img/HEADER/Cart/icon-cart@1X.png"/>--></a>
                 </div>
             </div>
             <div class="header__search-block">
                 <div class="header__search-block_search">
-                    <a href="#">
-                        <img src="img/HEADER/Search/icon-search.svg"/>
-                    </a>
+                    <a href="#"><!--<img src="img/HEADER/Search/icon-search@1X.png"/>--></a>
                 </div>
             </div>
         </div>
         <div class="main">
             <div class="main__content">
-                <h2 class="main__content_second-header">Lorem ipsum dolor sit.</h2>
-                <h1 class="main__content_first-header">Lorem ipsum.</h1>
-                <p class="main__content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, sint.</p>
+                <h2 class="main__content_second-header">Unique and Modern Design</h2>
+                <h1 class="main__content_first-header">Portfolio PSD Template</h1>
+                <p class="main__content_text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="main__button">
-                <button class="main__button_get-started">
-                    Get Started
-                </button>
+                <input type="button" value="Get Started" class="main__button_get-started"/>
             </div>
         </div>
     </div>
-</div>
 
 </body>
 </html>
