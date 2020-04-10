@@ -136,3 +136,6 @@ html, body {
     color: rgba(255, 255, 255, 255);
     text-align: center;
 }
+.main__button_get-started:hover{
+    background-color: black;
+}
