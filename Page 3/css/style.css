@@ -1,0 +1,45 @@
+html,body{
+    margin: 0 auto;
+    padding: 0;
+}
+.video-content{
+    width: auto;
+    height: 708px;
+    background-image:url("../img/photo@1X.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video-content__button{
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/circle@1X.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.video-content__text>h2{
+    font-family: ﻿Raleway-ExtraBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    padding-top: 44px;
+}
+.video-content__text>p{
+    width: 29vw;
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    padding-top: 30px;
+}
+.video-content__text>h3{
+    font-family: ﻿Raleway-ExtraBold, ﻿Montserrat-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(199, 178, 153, 255);
+    text-align: center;
+    padding-top: 40px;
+}
+
