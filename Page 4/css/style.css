@@ -1,0 +1,98 @@
+html,body{
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    height: 750px;
+    width: 1920px;
+}
+.posts{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.posts__header{
+    font-family: ﻿Raleway-SemiBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30pt;
+    color: rgba(85, 85, 85, 255);
+    text-align: center;
+    margin-top: 82px;
+    margin-bottom:30px;
+}
+.posts__description{
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    color: rgba(140, 140, 140, 255);
+    text-align: center;
+    width: 757px;
+    margin-bottom:38px;
+}
+.posts__samples{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.posts__samples-sample{
+    height:395px;
+    width:370px;
+    margin-right:30px;
+}
+.posts__samples-sample-text{
+ padding-left: 30px;
+}
+.posts__samples-sample-text>h2{
+    font-family: ﻿Raleway-Medium, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 20pt;
+    color: rgba(85, 85, 85, 255);
+    text-align: left;
+    padding-top: 29px;
+}
+.posts__samples-sample-text>p{
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(140, 140, 140, 255);
+    text-align: left;
+    padding-top: 19px;
+}
+.posts__samples-sample-arrow{
+
+    padding-top: 27px;
+    display:flex;
+}
+.posts__samples-sample-arrow a{
+    padding-right:9px;
+    text-decoration: none;
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(199, 178, 153, 255);
+    text-align: left;
+}
+.posts__samples-sample-image-data{
+    height:55px;
+    width:50px;
+    position:absolute;
+    top: 22px;
+    left: 22px;
+}
+.posts__samples-sample-image-data-day{
+    background-color: #363636;
+    color:white;
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 24pt;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.posts__samples-sample-image-data-month{
+    background-color: #252525;
+    font-family: ﻿Roboto-Regular, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.posts__samples-sample-image{
+    position: relative;
+}
