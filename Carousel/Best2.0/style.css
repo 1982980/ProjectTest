@@ -4,10 +4,10 @@ html,body{
 }
 .slider{
     width: 100%;
-    /*height: 100%;*/
-    position: relative;
+    height: 100%;
+    /*position: relative;*/
     margin: auto;
-    height: auto;
+    /*height: auto;*/
     /*margin-bottom: 15px;*/
 }
 /* Картинка масштабируется по отношению к родительскому элементу */
@@ -117,23 +117,23 @@ a {
     position:relative;
 }
 .main {
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    /*height:100%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
 }
-.main__content_second-header{
+/*.main__content_second-header{
     font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 36pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
 }
 .main__content{
-    width: /*850px*/45vw;
+    width: !*850px*!45vw;
 }
 .main__content_first-header{
     font-family: Raleway, sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
@@ -150,7 +150,7 @@ a {
     color: rgba(255, 255, 255, 255);
     text-align: center;
     padding-bottom: 52px;
-}
+}*/
 .main__button_get-started{
     height: 53px;
     width: 170px;

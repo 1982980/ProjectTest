@@ -96,3 +96,9 @@ html,body{
 .posts__samples-sample-image{
     position: relative;
 }
+.posts__samples-sample1-image-slides{
+    position: absolute;
+    background: black;
+    top: 90%;
+    left: 45%;
+}
