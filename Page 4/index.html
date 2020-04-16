@@ -5,6 +5,7 @@
     <title>Page 7</title>
     <link rel="stylesheet" href="css/Reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--    <script type="text/javascript" src="script.js"></script>-->
 </head>
 <body>
 <div class="container">
@@ -17,7 +18,7 @@
                 processus dynamicus, qui sequitur mutationem consuetudium.</p>
         </div>
         <div class="posts__samples">
-            <div class="posts__samples-sample">
+            <div class="posts__samples-sample" id="slideOn">
                 <div class="posts__samples-sample-image">
                     <img src="img/photo@1X.png"/>
                     <div class="posts__samples-sample-image-data">
@@ -38,14 +39,15 @@
                 </div>
                 <div class="posts__samples-sample-text">
                     <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus doloremque impedit magni nihil, quibusdam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus doloremque impedit
+                        magni nihil, quibusdam.</p>
                     <div class="posts__samples-sample-arrow">
                         <p><a href="#">Read more</a></p>
                         <a href="#"><img src="img/icon/arrow@1X.png" alt=""/></a>
                     </div>
                 </div>
             </div>
-            <div class="posts__samples-sample">
+            <div class="posts__samples-sample" >
                 <div class="posts__samples-sample-image">
                     <img src="img/photo@2X.png"/>
                     <!--<div class="posts__samples-sample2-image-slides">
@@ -66,7 +68,8 @@
                 </div>
                 <div class="posts__samples-sample-text">
                     <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus doloremque impedit magni nihil, quibusdam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus doloremque impedit
+                        magni nihil, quibusdam.</p>
                     <div class="posts__samples-sample-arrow">
                         <p><a href="#">Read more</a></p>
                         <a href="#"><img src="img/icon/arrow@1X.png" alt=""/></a>
@@ -94,7 +97,8 @@
                 </div>
                 <div class="posts__samples-sample-text">
                     <h2>Lorem ipsum dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus doloremque impedit magni nihil, quibusdam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus doloremque impedit
+                        magni nihil, quibusdam.</p>
                     <div class="posts__samples-sample-arrow">
                         <p><a href="#">Read more</a></p>
                         <a href="#"><img src="img/icon/arrow@1X.png" alt=""/></a>
@@ -103,10 +107,37 @@
             </div>
         </div>
     </div>
-        <div class="posts__arrows">
-            <img src="img/icon/left@1X.png" alt="Left"/>
-            <img src="img/icon/right@1X.png" alt="Right"/>
-        </div>
+    <div class="posts__arrows">
+        <img src="img/icon/left@1X.png" alt="Left"/>
+        <img src="img/icon/right@1X.png" alt="Right" id="elem"/>
+    </div>
+    <div class="footer">
+        <script>
+            //первый вариант удачный
+            elem.onclick = function () {
+// получить элемент
+                let elem = document.getElementsByClassName('slideOn');
+
+                if (elem.style.backgroundColor === '') {
+                    elem.style.backgroundColor = 'rgb(54,47,45)';
+                } else {
+                    elem.style.backgroundColor = '';
+                }
+            };
+
+        </script>
+        <!--<script>
+            //получаем идентификатор элемента
+            var a = document.getElementById('slade-on');
+            //вешаем на него событие
+            a.onclick = function() {
+                //производим какие-то действия
+                if (this.innerHTML=='On') this.innerHTML = 'Off';
+                else this.innerHTML = 'On';
+            }
+            }
+        </script>-->
+    </div>
 </div>
 </body>
 </html>
