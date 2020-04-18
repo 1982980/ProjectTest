@@ -18,7 +18,7 @@
                 processus dynamicus, qui sequitur mutationem consuetudium.</p>
         </div>
         <div class="posts__samples">
-            <div class="posts__samples-sample" id="slideOn">
+            <div class="posts__samples-sample" id="slideOn0">
                 <div class="posts__samples-sample-image">
                     <img src="img/photo@1X.png"/>
                     <div class="posts__samples-sample-image-data">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="posts__samples-sample" >
+            <div class="posts__samples-sample" id="slideOn1">
                 <div class="posts__samples-sample-image">
                     <img src="img/photo@2X.png"/>
                     <!--<div class="posts__samples-sample2-image-slides">
@@ -76,7 +76,7 @@
                     </div>
                 </div>
             </div>
-            <div class="posts__samples-sample">
+            <div class="posts__samples-sample" id="slideOn2">
                 <div class="posts__samples-sample-image">
                     <img src="img/photo@3X.png"/>
                     <!--<div class="posts__samples-sample2-image-slides">
@@ -108,22 +108,49 @@
         </div>
     </div>
     <div class="posts__arrows">
-        <img src="img/icon/left@1X.png" alt="Left"/>
-        <img src="img/icon/right@1X.png" alt="Right" id="elem"/>
+        <img src="img/icon/left@1X.png" alt="Left" id="elemLeft"/>
+        <img src="img/icon/right@1X.png" alt="Right" id="elemRight"/>
     </div>
     <div class="footer">
         <script>
             //первый вариант удачный
-            elem.onclick = function () {
+            elemRight.onclick = function () {
 // получить элемент
-                let elem = document.getElementsByClassName('slideOn');
+                let elem0 = document.getElementById('slideOn0');
+                let elem1 = document.getElementById('slideOn1');
+                let elem2 = document.getElementById('slideOn2');
 
-                if (elem.style.backgroundColor === '') {
-                    elem.style.backgroundColor = 'rgb(54,47,45)';
+                if (elem1.style.backgroundColor === '') {
+                    elem1.style.backgroundColor = 'rgb(54,47,45)';
                 } else {
-                    elem.style.backgroundColor = '';
+                    elem1.style.backgroundColor = '';
+                    elem2.style.backgroundColor = 'rgb(54,47,45)';
                 }
             };
+
+            elemLeft.onclick = function () {
+// получить элемент, задал переменную для каждого блока
+                let elem0 = document.getElementById('slideOn0');
+                let elem1 = document.getElementById('slideOn1');
+                let elem2 = document.getElementById('slideOn2');
+// добавил в условие изменения других блоков по onclick
+                if (elem1.style.backgroundColor === '') {
+                    elem1.style.backgroundColor = 'rgb(54,47,45)';
+                } else {
+                    elem1.style.backgroundColor = '';
+                    elem0.style.backgroundColor = 'rgb(54,47,45)';
+                }
+            };
+            // цикл для перебора блоков, для увеличения  и вычисления по кругу
+            for(i=0; i<4; i++){
+                if (i>3){
+                    i = 0;
+                }
+            }
+            // цикл для перебора блоков, для уменьшения и вычисления по кругу
+            for (i=4;i=0; i--){
+                if
+            }
 
         </script>
         <!--<script>
