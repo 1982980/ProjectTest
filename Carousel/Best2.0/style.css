@@ -48,8 +48,8 @@ html,body{
 .slider .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-/* надпись */
-.slideText {
+/* блок который является слайдом и в него вставляется контент */
+.slideText {    
     position: absolute;
     color: #fff;
     font-size: 35px;
@@ -116,7 +116,7 @@ a {
     color: white;
 }
 
-/* это для текста который я добавил*/
+/* это для текста который я добавил. Стили для контента на каждом слайде, поскольку в каждом слайде одинаковый контент*/
 .item{
     position:relative;
 }
@@ -126,7 +126,6 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* position: absolute; */
     left: 50%;
     top: 50%;
     padding-top: 200px;
