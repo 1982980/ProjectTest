@@ -30,7 +30,6 @@ html,body{
 }
 .posts__samples{
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
 }
 .posts__samples-sample{
@@ -101,4 +100,12 @@ html,body{
     background: black;
     top: 90%;
     left: 45%;
+}
+.posts__arrows{
+    display: flex;
+    justify-content:center;
+    padding-top:40px;
+}
+.slideOn{
+    background-color: #362f2d;
 }
