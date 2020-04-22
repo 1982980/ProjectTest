@@ -4,35 +4,40 @@ html, body {
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     background-image: url("../img/SLIDER/Photo/photo@1X.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 .header{
     height: 64px;
-    max-width: 1082px;
+    /*max-width: 1082px;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-top: 42px;
-    padding-left: 375px;
-    padding-right: 375px;
+    /*padding-left: 375px;*/
+    /*padding-right: 375px;*/
 }
 .header__logo_block{
     display: flex;
     align-items: center;
-    padding-right: 219px;
+    justify-content: space-between;
+    /*padding-right: 219px;*/
 }
 .header__logo-block-name{
-    font-family: ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;
     font-size: 34pt;
     color: white;
     text-align: right;
     text-decoration: none;
+    padding-left:62px;
+
 }
 .header__logo-block-name:hover{
     color: black;
@@ -41,21 +46,285 @@ html, body {
     background-image: url("../img/HEADER/Logo/logos@1X.png");
     height: 56px;
     width: 64px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 .header__logo-block-logo:hover{
     background-image: url("../img/HEADER/Logo/logos.svg");
 }
-/*Нужно сделать чтобы при ховере менялся одновременно цвет текста и картинке */
-.header__menu-block{
-    font-family: ﻿Raleway-Medium, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+/*стили для блока меню*/
+.header__menu-block_menu{
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu-block_menu-items{
+    font-family: 'Raleway', sans-serif;
     font-size: 14pt;
     color: white;
     text-align: left;
     text-decoration: none;
+    padding-right: 5%;
 }
-.header__menu-block_main-menu_menu{
+.header__menu-block_menu-items:hover{
+    color: #c0ac94;
+}
+.header__cart-block{
+    display: flex;
+}
+.header__cart-block_cart{
+    display: block;
+    width: 18px;
+    height: 24px;
+    background-image: url("../img/HEADER/Cart/icon-cart@1X.png");
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.header__cart-block_cart:hover{
+    background-image: url("../img/HEADER/Cart/icon-cart.svg");
+}
+.header__search-block_search{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/HEADER/Search/icon-search@1X.png");
+}
+.header__search-block_search:hover{
+    background-image: url("../img/HEADER/Search/icon-search.svg");
+}
+
+/*стили для блока слайдера*/
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    /*height: auto;*/
+    /*margin-bottom: 15px;*/
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.7) no-repeat top;
+}
+/* Картинка масштабируется по отношению к родительскому элементу */
+/* .slider .item img {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 30%;
+} */
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* color: white;
+    font-weight: bold;
+    font-size: 18px; */
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* Фон кнопок вперед и назад при наведении */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* блок который является слайдом и в него вставляется контент */
+.slideText {
+    /*position: absolute;*/
+    /*color: #fff;*/
+    /*font-size: 35px;*/
+    /*!* Выравнивание текста горизонтально и по вертикально*!*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*!* Тень текста*!*/
+    /*text-shadow: 1px 1px 1px #000, 0 0 1em #000;*/
+}
+/* Кружочки под слайдами */
+.slider-dots {
     display: flex;
     align-items: center;
-    /*justify-content: space-around;*/
+    justify-content: center;
+    position: absolute;
+    left:47%;
+    bottom:3%;
 }
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #8c8d8f;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    /*background-color: #fff;*/
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #717171;
+    margin: 0 2px;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.main {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*padding-top: 200px;*/
+}
+.main__content_second-header{
+    font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 36pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+}
+.main__content{
+    width: 850px;
+}
+.main__content_first-header{
+    font-family: 'Raleway', sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 52pt;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+
+}
+.main__content_text{
+    font-family: ﻿Raleway, sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    padding-bottom: 52px;
+}
+.main__button_get-started{
+    height: 53px;
+    width: 170px;
+    border: none;
+    background-color: rgba(153,134,117,1);
+    font-family: ﻿Raleway, sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-weight: 800;
+    font-size: 14pt;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 9px 5px rgba(3,0,0,1);
+}
+.main__button_get-started:hover{
+    background-color: black;
+}
+/*Page 2 */
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 87px;
+}
+.text__h2{
+    font-family: ﻿Raleway-SemiBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 30pt;
+    color: rgba(85, 85, 85, 255);
+    text-align: center;
+    padding-bottom: 24px;
+}
+.text__p {
+    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    color: rgba(140, 140, 140, 255);
+    text-align: center;
+    width: 40vw;
+}
+.images{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    /*position: relative;*/
+}
+.images__relative{
+    padding-top:82px;
+}
+.images__absolute{
+    position: absolute;
+    padding-bottom:1px;
+}
+.footer{
+    width: auto;
+    height: 150px;
+    background: linear-gradient(to right,#211b19,#4e3327);
+    padding-left: 375px;
+    padding-right: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__text_h2{
+    font-family: ﻿Raleway-Medium, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 28pt;
+    color: #ffffff;
+    text-align: left;
+}
+.footer__text_h2-logo{
+    color: #c7b299;
+}
+.footer__text>p{
+    font-family: ﻿Raleway-Medium, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18pt;
+    color: rgba(97, 88, 85, 255);
+    text-align: left;
+}
+.footer__button_purchase-now{
+    width: 170px;
+    height: 50px;
+    background-color: #998675;
+    color: #ffffff;
+    font-family: ﻿Raleway ExtraBold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    text-align: center;
+    border: none;
+}
+
 
