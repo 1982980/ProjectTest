@@ -100,6 +100,7 @@ html, body {   /* обнуление для html body уже есть в фай�
     background-size: cover;
     overflow: hidden;
     position: relative;
+    
  }
 .slider{
     width: 100%;
@@ -109,7 +110,8 @@ html, body {   /* обнуление для html body уже есть в фай�
     /*height: auto;*/
     /*margin-bottom: 15px;*/
     background-size: cover;
-    background: rgba(0, 0, 0, 0.7) no-repeat top;   /*параметр который добавляет черный полупрозрачный фон на слайдере (убрать)*/
+    background: rgba(0, 0, 0, 0.7) no-repeat top;   
+    /*параметр который добавляет черный полупрозрачный фон на слайдере (убрать)*/
 }
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
@@ -210,7 +212,7 @@ a {
     text-align: center;
     /*left: 50%;*/      /*закоментированы три параметра которые выставляют контент слайдера по центру ;*/ 
     /*top: 50%;*/
-    /*padding-top: 200px;*/
+    padding-top: 200px;
 }
 .main__content_second-header{
     font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;   /*неверно указаны шрифты почти везде. Шрифты просто были скопированы с редактора PSDetch. нету кавычек. Вот такая долна быть запись font-family: 'Raleway', sans-serif; */
@@ -231,7 +233,7 @@ a {
 
 }
 .main__content_text{
-    font-family: ﻿Raleway, sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: "Raleway", sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 16pt;
     font-weight: 600;
     color: rgba(255, 255, 255, 255);
