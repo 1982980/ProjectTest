@@ -1,4 +1,4 @@
-html, body {
+html, body {   /* обнуление для html body уже есть в файле reset.css */
     margin: 0 auto;
     padding: 0;
 }
@@ -94,7 +94,7 @@ html, body {
 
 /*стили для блока слайдера*/
 .page1{
-    width: 100%;
+    width: 100%;  /* присутствие ширины в 100% ничего не меняет */
     height: auto;
     background: white url("../img/SLIDER/Photo/photo@1X.png") no-repeat fixed center;
     background-size: cover;
@@ -109,7 +109,7 @@ html, body {
     /*height: auto;*/
     /*margin-bottom: 15px;*/
     background-size: cover;
-    background: rgba(0, 0, 0, 0.7) no-repeat top;
+    background: rgba(0, 0, 0, 0.7) no-repeat top;   /*параметр который добавляет черный полупрозрачный фон на слайдере (убрать)*/
 }
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
@@ -137,7 +137,7 @@ html, body {
 }
 /* блок который является слайдом и в него вставляется контент */
 .slideText {
-    /*position: absolute;*/
+    /* position: absolute;*/
     /*color: #fff;*/
     /*font-size: 35px;*/
     /*!* Выравнивание текста горизонтально и по вертикально*!*/
@@ -145,7 +145,7 @@ html, body {
     /*top: 50%;*/
     /*transform: translate(-50%, -50%);*/
     /*!* Тень текста*!*/
-    /*text-shadow: 1px 1px 1px #000, 0 0 1em #000;*/
+    /*text-shadow: 1px 1px 1px #000, 0 0 1em #000; */
 }
 /* Кружочки под слайдами */
 .slider-dots {
@@ -208,15 +208,16 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /*left: 50%;*/
+    /*left: 50%;*/      /*закоментированы три параметра которые выставляют контент слайдера по центру ;*/ 
     /*top: 50%;*/
     /*padding-top: 200px;*/
 }
 .main__content_second-header{
-    font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;   /*неверно указаны шрифты почти везде. Шрифты просто были скопированы с редактора PSDetch. нету кавычек. Вот такая долна быть запись font-family: 'Raleway', sans-serif; */
     font-size: 36pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
+    
 }
 .main__content{
     width: 850px;
@@ -248,7 +249,7 @@ a {
     color: rgba(255, 255, 255, 255);
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 9px 5px rgba(3,0,0,1);
+    box-shadow: 0 9px 5px rgba(3,0,0,1);  /*параметр который добавляет тень у кнопки (убрать)*/
 }
 .main__button_get-started:hover{
     background-color: black;
@@ -271,7 +272,7 @@ a {
     padding-bottom: 24px;
 }
 .text__p {
-    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+     font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;  /*этот шрифт не подключен к странице*/
     font-size: 16pt;
     color: rgba(140, 140, 140, 255);
     text-align: center;
@@ -335,6 +336,7 @@ a {
     width: auto;
     height: 708px;
     background: url("../img/Page3/photo@1X.png") white no-repeat fixed center;
+    /* фоновое изображение закреплено на весь сайт а не на конкретный блок. при прокрутке сайта, изображение остается на месте */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -379,7 +381,7 @@ a {
     width: auto;
 }
 .posts{
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

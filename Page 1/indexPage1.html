@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Page1</title>
+    <!-- не вижу смысла подключать reset.css для это сайта -->
     <link rel="stylesheet" href="css/Reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <!-- на сайте используется два шрифта а подключен один. Нужно подключить Montserrat-Light -->
 </head>
 <body>
+<!--  в html5 так принято писать разметку
+    <header>
+
+</header>
+    <section class="page1">
+
+    </section>
+    <section class="page2">
+
+    </section>
+    ....
+<footer>
+
+</footer>
+ -->
+<!-- все экраны помещены в один div -->
 <div class="container">
     <div class="page1">
         <div class="slider">
         <div class="header">
             <div class="header__logo_block">
-                <a href='#' class="header__logo-block-logo">
+                 <a href='#' class="header__logo-block-logo">  <!-- в названии классов по несколько раз используются одинаковые слова -->
                     <span class="header__logo-block-name">Waxom</span>
                 </a>
             </div>
             <div class="header__menu-block">
+                <!-- меню не оформленно в стилях -->
                 <nav class="header__menu-block_menu">
                     <a href="#" class="header__menu-block_menu-items">Home</a>
                     <a href="#" class="header__menu-block_menu-items">AboutUs</a>
@@ -151,7 +170,7 @@
             </div>
             <img class="images__absolute" src="img/Page2/browser-center@1X.png" alt="">
         </div>
-        <div class="footer">
+        <div class="footer">   <!--имя класса footer *колется*. более логично было назвать purchase. таким образои имя класса было бы подвязано логично с сутью блока  -->
             <div class="footer__text">
                 <h2 class="footer__text_h2">
                     <span class="footer__text_h2-logo">Waxom </span>
@@ -167,8 +186,9 @@
     <div class="page3">
         <div class="video-content">
             <div class="video-content__button">
-                <a><img src="img/Page3/icon-play@1X.png" alt=""
+                <a><img src="img/Page3/icon-play@1X.png" alt="" 
                         onclick="confirm('Вы перейдете на нашу страницу YouTube. Вы согласны?')"/></a>
+                        <!-- не переходит на ютюб. Мы разсматривали вариант с всплывающим блоком в котором будет видео -->
             </div>
 
             <div class="video-content__text">
@@ -188,7 +208,7 @@
                 <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
                     processus dynamicus, qui sequitur mutationem consuetudium.</p>
             </div>
-            <div class="posts__samples">
+            <div class="posts__samples">   
                 <div class="posts__samples-sample" id="slideOn0">
                     <div class="posts__samples-sample-image">
                         <img src="img/Page4/photo@1X.png"/>
