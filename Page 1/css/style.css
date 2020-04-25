@@ -6,7 +6,6 @@ html, body {   /* обнуление для html body уже есть в фай�
 .container {
     width: 100%;
     height: auto;
-    /*background-image: url("../img/SLIDER/Photo/photo@1X.png");*/
     background: white no-repeat fixed center;
     background-size: cover;
     overflow: hidden;
@@ -26,10 +25,11 @@ html, body {   /* обнуление для html body уже есть в фай�
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*padding-right: 219px;*/
+    padding-right: 10%;
 }
 .header__logo-block-name{
     font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 34pt;
     color: white;
     text-align: right;
@@ -59,11 +59,12 @@ html, body {   /* обнуление для html body уже есть в фай�
 }
 .header__menu-block_menu-items{
     font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 14pt;
     color: white;
     text-align: left;
     text-decoration: none;
-    padding-right: 5%;
+    margin-right: 10%;
 }
 .header__menu-block_menu-items:hover{
     color: #c0ac94;
@@ -94,9 +95,8 @@ html, body {   /* обнуление для html body уже есть в фай�
 
 /*стили для блока слайдера*/
 .page1{
-    width: 100%;  /* присутствие ширины в 100% ничего не меняет */
     height: auto;
-    background: white url("../img/SLIDER/Photo/photo@1X.png") no-repeat fixed center;
+    background: white url("../img/SLIDER/Photo/photo@1X.png") no-repeat scroll center;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -105,13 +105,12 @@ html, body {   /* обнуление для html body уже есть в фай�
 .slider{
     width: 100%;
     height: 100vh;
-    position: relative;
+    /*position: relative;*/
     margin: auto;
     /*height: auto;*/
     /*margin-bottom: 15px;*/
     background-size: cover;
-    background: rgba(0, 0, 0, 0.7) no-repeat top;   
-    /*параметр который добавляет черный полупрозрачный фон на слайдере (убрать)*/
+    background: rgba(0, 0, 0, 0.7) no-repeat top;
 }
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
@@ -155,7 +154,7 @@ html, body {   /* обнуление для html body уже есть в фай�
     align-items: center;
     justify-content: center;
     position: absolute;
-    left:47%;
+    left:45%;
     bottom:3%;
 }
 .slider-dots_item{
@@ -210,12 +209,13 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /*left: 50%;*/      /*закоментированы три параметра которые выставляют контент слайдера по центру ;*/ 
-    /*top: 50%;*/
-    padding-top: 200px;
+    left: 50%;
+    top: 50%;
+    padding-top: 100px;
 }
 .main__content_second-header{
-    font-family: Raleway, sans-serif, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;   /*неверно указаны шрифты почти везде. Шрифты просто были скопированы с редактора PSDetch. нету кавычек. Вот такая долна быть запись font-family: 'Raleway', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 36pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
@@ -225,7 +225,7 @@ a {
     width: 850px;
 }
 .main__content_first-header{
-    font-family: 'Raleway', sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;
     font-size: 52pt;
     font-weight: 800;
     color: rgba(255, 255, 255, 255);
@@ -233,7 +233,7 @@ a {
 
 }
 .main__content_text{
-    font-family: "Raleway", sans-serif, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: "Raleway", sans-serif;
     font-size: 16pt;
     font-weight: 600;
     color: rgba(255, 255, 255, 255);
@@ -245,13 +245,12 @@ a {
     width: 170px;
     border: none;
     background-color: rgba(153,134,117,1);
-    font-family: ﻿Raleway, sans-serif, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: '﻿Raleway', sans-serif;
     font-weight: 800;
     font-size: 14pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 9px 5px rgba(3,0,0,1);  /*параметр который добавляет тень у кнопки (убрать)*/
 }
 .main__button_get-started:hover{
     background-color: black;
@@ -267,14 +266,16 @@ a {
     margin-top: 87px;
 }
 .text__h2{
-    font-family: ﻿Raleway-SemiBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 30pt;
     color: rgba(85, 85, 85, 255);
     text-align: center;
     padding-bottom: 24px;
 }
 .text__p {
-     font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;  /*этот шрифт не подключен к странице*/
+    font-family:﻿'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 16pt;
     color: rgba(140, 140, 140, 255);
     text-align: center;
@@ -284,8 +285,6 @@ a {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-
-    /*position: relative;*/
 }
 .images__relative{
     padding-top:82px;
@@ -309,7 +308,8 @@ a {
     align-items: center;
 }
 .footer__text_h2{
-    font-family: ﻿Raleway-Medium, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 28pt;
     color: #ffffff;
     text-align: left;
@@ -318,7 +318,8 @@ a {
     color: #c7b299;
 }
 .footer__text>p{
-    font-family: ﻿Raleway-Medium, ﻿Montserrat-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 18pt;
     color: rgba(97, 88, 85, 255);
     text-align: left;
@@ -328,22 +329,29 @@ a {
     height: 50px;
     background-color: #998675;
     color: #ffffff;
-    font-family: ﻿Raleway ExtraBold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 800;
     font-size: 14pt;
     text-align: center;
     border: none;
 }
 /*Page 3*/
+
 .video-content{
     width: auto;
     height: 708px;
-    background: url("../img/Page3/photo@1X.png") white no-repeat fixed center;
-    /* фоновое изображение закреплено на весь сайт а не на конкретный блок. при прокрутке сайта, изображение остается на месте */
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.7) no-repeat top;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.page3{
+    width: auto;
+    height: 708px;
+    background: url("../img/Page3/photo@1X.png") no-repeat scroll center;
+    background-size: cover;
+
 }
 .video-content__button{
     width: 100px;
@@ -355,22 +363,24 @@ a {
     cursor: pointer;
 }
 .video-content__text>h2{
-    font-family: ﻿Raleway-ExtraBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;;
+    font-weight:800;
     font-size: 30pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
     padding-top: 44px;
 }
 .video-content__text>p{
-    width: 29vw;
-    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 16pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
     padding-top: 30px;
 }
 .video-content__text>h3{
-    font-family: ﻿Raleway-ExtraBold, ﻿Montserrat-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: ﻿'Raleway', sans-serif;
+    font-weight: 800;
     font-size: 14pt;
     color: rgba(199, 178, 153, 255);
     text-align: center;
@@ -381,6 +391,7 @@ a {
 .page4 {
     height: 750px;
     width: auto;
+    position:relative;
 }
 .posts{
     display: flex;
@@ -389,7 +400,8 @@ a {
     align-items: center;
 }
 .posts__header{
-    font-family: ﻿Raleway-SemiBold, ﻿Raleway-Medium, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 30pt;
     color: rgba(85, 85, 85, 255);
     text-align: center;
@@ -397,11 +409,11 @@ a {
     margin-bottom:30px;
 }
 .posts__description{
-    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 16pt;
     color: rgba(140, 140, 140, 255);
     text-align: center;
-    width: 757px;
     margin-bottom:38px;
 }
 .posts__samples{
@@ -409,7 +421,7 @@ a {
     align-items: center;
 }
 .posts__samples-sample{
-    height:395px;
+    height:auto;
     width:370px;
     margin-right:30px;
 }
@@ -417,28 +429,30 @@ a {
     padding-left: 30px;
 }
 .posts__samples-sample-text>h2{
-    font-family: ﻿Raleway-Medium, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 20pt;
     color: rgba(85, 85, 85, 255);
     text-align: left;
     padding-top: 29px;
 }
 .posts__samples-sample-text>p{
-    font-family: ﻿Montserrat-Light, ﻿Raleway-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 14pt;
     color: rgba(140, 140, 140, 255);
     text-align: left;
     padding-top: 19px;
 }
 .posts__samples-sample-arrow{
-
     padding-top: 27px;
     display:flex;
 }
 .posts__samples-sample-arrow a{
     padding-right:9px;
     text-decoration: none;
-    font-family: ﻿Montserrat-Light, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 14pt;
     color: rgba(199, 178, 153, 255);
     text-align: left;
@@ -453,7 +467,8 @@ a {
 .posts__samples-sample-image-data-day{
     background-color: #363636;
     color:white;
-    font-family: ﻿Montserrat-Light, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 24pt;
     text-align: center;
     border-top-right-radius: 5px;
@@ -461,7 +476,8 @@ a {
 }
 .posts__samples-sample-image-data-month{
     background-color: #252525;
-    font-family: ﻿Roboto-Regular, ﻿Raleway-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-family: ﻿'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 12pt;
     color: rgba(255, 255, 255, 255);
     text-align: center;
@@ -481,9 +497,11 @@ a {
     display: flex;
     justify-content:center;
     padding-top:40px;
+    padding-bottom:80px;
 }
 .slideOn{
     background-color: #362f2d;
+
 }
 
 
