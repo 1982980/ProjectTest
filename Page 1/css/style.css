@@ -13,21 +13,17 @@ html, body {   /* обнуление для html body уже есть в фай�
 }
 .header{
     height: 64px;
-    /*max-width: 1082px;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 42px;
-    /*padding-left: 375px;*/
-    /*padding-right: 375px;*/
 }
-.header__logo_block{
+.logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10%;
 }
-.header__logo-block-name{
+.logo__text{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 34pt;
@@ -37,10 +33,10 @@ html, body {   /* обнуление для html body уже есть в фай�
     padding-left:62px;
 
 }
-.header__logo-block-name:hover{
+.logo__text:hover{
     color: black;
 }
-.header__logo-block-logo{
+.logo__image{
     background-image: url("../img/HEADER/Logo/logos@1X.png");
     height: 56px;
     width: 64px;
@@ -48,31 +44,31 @@ html, body {   /* обнуление для html body уже есть в фай�
     display: flex;
     align-items: center;
 }
-.header__logo-block-logo:hover{
+.logo__image:hover{
     background-image: url("../img/HEADER/Logo/logos.svg");
 }
 /*стили для блока меню*/
-.header__menu-block_menu{
-    width: 28%;
+.menu{
+    /*width: 28%;*/
     display: flex;
     justify-content: space-between;
 }
-.header__menu-block_menu-items{
+.menu__item{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 14pt;
     color: white;
     text-align: left;
     text-decoration: none;
-    margin-right: 10%;
+    margin-right: 10px;
 }
-.header__menu-block_menu-items:hover{
+.menu__item:hover{
     color: #c0ac94;
 }
-.header__cart-block{
+.icons{
     display: flex;
 }
-.header__cart-block_cart{
+.icon__bucket{
     display: block;
     width: 18px;
     height: 24px;
@@ -80,16 +76,16 @@ html, body {   /* обнуление для html body уже есть в фай�
     margin-left: 30px;
     margin-right: 30px;
 }
-.header__cart-block_cart:hover{
+.icon__bucket:hover{
     background-image: url("../img/HEADER/Cart/icon-cart.svg");
 }
-.header__search-block_search{
+.icon__search{
     display: block;
     width: 24px;
     height: 24px;
     background-image: url("../img/HEADER/Search/icon-search@1X.png");
 }
-.header__search-block_search:hover{
+.icon__search:hover{
     background-image: url("../img/HEADER/Search/icon-search.svg");
 }
 
